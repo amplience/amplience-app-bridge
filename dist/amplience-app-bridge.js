@@ -742,6 +742,10 @@
         }
     };
 
+    Host.prototype.renewToken = function (success, error){
+        this.channel.call({method: 'renewToken', success: success, error: error});
+    };
+
     Host.prototype.onActivate = function(cb){
         return this.onActivateManager.register(cb);
     };
