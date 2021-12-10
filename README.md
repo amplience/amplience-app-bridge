@@ -1,6 +1,6 @@
-#amplience-app-bridge
+# amplience-app-bridge
 
-##Overview
+## Overview
 When creating an Amplience app, this library must be included within your app to communicate with the platform. The bridge library will provide hooks for:
 
 - Initializing your application, passing in activation data such as which assets were selected.
@@ -9,7 +9,7 @@ When creating an Amplience app, this library must be included within your app to
 - Callbacks for change in asset selection.
 - Application lifecycle callbacks. Application closure hooks, opportunity to prompt before app closure.
 
-##Usage
+## Usage
 Within the client app, connect to the host using `var host = new amp.Host();`, add a ready callback with `host.onReady(function(){})`
 
 
@@ -31,3 +31,6 @@ Example:
             }
         })
     });
+
+## Licensing
+This library is licensed under Apache-2.0. It uses a modified version of Mozilla jschannel which is licensed under MPL 1.1. A copy of the license and documentation related to the changes can be found in [lib/jschannel.js](/lib/jschannel.js)
